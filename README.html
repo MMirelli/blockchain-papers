@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>README.html</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<h1>Blockchain Papers <a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome" /></a></h1>
+
+<p>A curated list of blockchain-related academic papers. Papers with   have been
+peer-reviewed and presented in academic conferences.</p>
+
+<h2>Table of Contents</h2>
+
+<ol>
+<li><a href="#general">General</a></li>
+<li><a href="#consensus">Consensus</a></li>
+<li><a href="#cryptography">Cryptography</a></li>
+<li><a href="#block-generation-parameters">Block generation and mining</a></li>
+<li><a href="#stake">Stake</a></li>
+<li><a href="#attacks">Attacks</a></li>
+<li><a href="#wallets">Wallets</a></li>
+<li><a href="#crime">Crime</a></li>
+<li><a href="#economics">Economics</a></li>
+<li><a href="#marketplaces-and-trust">Marketplaces and Trust</a></li>
+<li><a href="#privacy">Privacy</a></li>
+<li><a href="#sidechains-higher-layer-and-scalability">Sidechains, Higher layer and Scalability</a></li>
+<li><a href="#payment-networks">Payment Networks</a></li>
+<li><a href="#fungibility">Fungibility</a></li>
+<li><a href="#network">Network</a></li>
+<li><a href="#smart-contracts">Smart Contracts</a></li>
+<li><a href="#formal-methods">Formal Methods</a></li>
+<li><a href="#proof-of-work">Proof of work</a></li>
+<li><a href="#dag-based-consensus">DAG-based consensus mechanisms</a></li>
+<li><a href="#survey-sociological--anthropological">Survey, Sociological &amp; Anthropological</a></li>
+<li><a href="#applications">Applications</a></li>
+<li><a href="#license">License</a></li>
+</ol>
+
+
+<hr />
+
+<h2>General</h2>
+
+<ul>
+<li><strong><a href="https://bitcoin.com/bitcoin.pdf">Bitcoin: A Peer-to-Peer Electronic Cash System</a></strong>. Nakamoto S. &lsquo;08.</li>
+<li><strong><a href="http://www.jbonneau.com/doc/BMCNKF15-IEEESP-bitcoin.pdf">SoK: Research Perspectives and Challenges for Bitcoin and Cryptocurrencies</a></strong>. Bonneau J, Miller A, Clark J, Narayanan A, Kroll JA, Felten EW. S&amp;P &lsquo;15.</li>
+<li><a href="http://delivery.acm.org/10.1145/3140000/3132259/p36-narayanan.pdf?ip=88.197.32.177&amp;id=3132259&amp;acc=OPEN&amp;key=5641A0C343C36AC1%2E4ABAF8470B13FB25%2E4D4702B0C3E38B35%2E6D218144511F3437&amp;__acm__=1541082825_ead879dbf5b3644bfed2a09e11b47834">Bitcoin&rsquo;s Academic Pedigree</a>. Narayanan A, Clark J. ACM Queue &lsquo;17.</li>
+<li><a href="https://www.researchgate.net/profile/Thomas_Dasaklis/publication/329136952_A_systematic_literature_review_of_blockchain-based_applications_Current_status_classification_and_open_issues/links/5c4cab1ba6fdccd6b5cb7ea1/A-systematic-literature-review-of-blockchain-based-applications-Current-status-classification-and-open-issues.pdf">A systematic literature review of blockchain-based applications: Current status, classification and open issues</a>. Casino F, Dasaklis T, Patsakis C. T&amp;I &lsquo;18.</li>
+</ul>
+
+
+<h2>Consensus</h2>
+
+<ul>
+<li><strong><a href="https://eprint.iacr.org/2014/765.pdf">The Bitcoin Backbone Protocol: Analysis and Applications</a></strong>. Garay J, Kiayias A, Leonardos N. EUROCRYPT &lsquo;15.</li>
+<li><a href="https://eprint.iacr.org/2016/1048.pdf">The Bitcoin Backbone Protocol with Chains of Variable Difficulty</a>. Garay J. Kiayias A, Leonardos N. &lsquo;16. CRYPTO '17.</li>
+<li><a href="https://eprint.iacr.org/2016/454.pdf">Analysis of the Blockchain Protocol in Asynchronous Networks</a>. Pass R, Seeman L, shelat a. EUROCRYPT &lsquo;17.</li>
+<li><a href="https://eprint.iacr.org/2016/545.pdf">On Trees, Chains and Fast Transactions in the Blockchain</a>. Kiayias A, Panagiotakos G. &lsquo;16.</li>
+<li>&ldquo;RSCoin&rdquo;: <a href="https://arxiv.org/pdf/1505.06895.pdf">Centrally banked cryptocurrencies</a>. Danezis G, Meiklejohn S. &lsquo;15.</li>
+<li><a href="https://socrates1024.s3.amazonaws.com/consensus.pdf">Anonymous Byzantine Consensus from Moderately-Hard Puzzles: A Model for Bitcoin</a>. Miller A, LaViola JJ Jr. &lsquo;14.</li>
+</ul>
+
+
+<h3>Classic Consensus</h3>
+
+<ul>
+<li><a href="https://people.eecs.berkeley.edu/~luca/cs174/byzantine.pdf">The Byzantine Generals Problem</a>. Lamport L, Shostak R., Pease M. &lsquo;82. TOPLAS '82.</li>
+<li><a href="https://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf">Consensus in the Presence of Partial Synchrony</a>. Dwork S., Lynch N. &lsquo;88. JACM '88.</li>
+<li><a href="http://pmg.csail.mit.edu/papers/osdi99.pdf">Practical Byzantine Fault Tolerance</a>. Castro M., Liskov B. &lsquo;99. OSDI '99.</li>
+<li><a href="https://lamport.azurewebsites.net/pubs/lamport-paxos.pdf">The part-time parliament</a>. Lamport L. &lsquo;00. TOCS '98.</li>
+<li><a href="https://lamport.azurewebsites.net/pubs/paxos-simple.pdf">Paxos Made Simple</a> Lamport L. &lsquo;00, ACM SIGACT News '01.</li>
+</ul>
+
+
+<h2>Cryptography</h2>
+
+<ul>
+<li><a href="https://pdfs.semanticscholar.org/ebae/9c7d91ea8b6a987642040a2142cc5ea67f7d.pdf">On Bitcoin as a public randomness source</a>. Bonneau J, Clark J, Goldfeder S. &lsquo;15.</li>
+<li><a href="https://eprint.iacr.org/2014/796.pdf">Distributed Cryptography Based on the Proofs of Work</a>. Andrychowicz M, and Dziembowski S. &lsquo;14.</li>
+<li><a href="https://eprint.iacr.org/2018/046.pdf">Scalable, transparent, and post-quantum secure computational integrity</a>. Ben-Sasson E, Bentov I, Horesh Y, Riabzev M. &lsquo;18.</li>
+<li><a href="https://eprint.iacr.org/2017/149.pdf">Bitcoin as a Transaction Ledger: A Composable Treatment</a>. Badertscher C., Maurer U., Tschudi D., Zikas V. &lsquo;19. CRYPTO '17.</li>
+</ul>
+
+
+<h2>Block generation and mining</h2>
+
+<ul>
+<li><a href="https://eprint.iacr.org/2016/991.pdf">Bootstrapping the Blockchain - Directly</a>. Garay JA, Kiayias A, Leonardos N, Panagiotakos G. &lsquo;16.</li>
+<li><a href="https://pdfs.semanticscholar.org/7de8/ff6bb85a020aa96f62dd86233fe9416550f3.pdf">Speed-Security Tradeoffs in Blockchain Protocols</a>. Kiayias A, Panagiotakos G. &lsquo;15.</li>
+<li>&ldquo;GHOST&rdquo;: <a href="https://fc15.ifca.ai/preproceedings/paper_30.pdf">Secure High-Rate Transaction Processing in Bitcoin</a>. Sompolinsky Y, Zohar A. FC &lsquo;15.</li>
+<li><a href="http://fc15.ifca.ai/preproceedings/paper_101.pdf">Inclusive Block Chain Protocols</a>. Lewenberg Y, Sompolinsky Y, Zohar A. FC &lsquo;15.</li>
+<li><a href="https://eprint.iacr.org/2016/555.pdf">On the Security and Performance of Proof of Work Blockchains</a>. Gervais A, Karame GO, Wüst K, Glykantzis V, Ritzdorf H, Capkun S. CCS &lsquo;16.</li>
+<li><a href="https://eprint.iacr.org/2017/019.pdf">Smartpool: Practical decentralized pooled mining</a>. Luu L, Velner Y, Teutsch J, Saxena P. USENIX Security &lsquo;17.</li>
+</ul>
+
+
+<h2>Stake</h2>
+
+<ul>
+<li><a href="https://pdfs.semanticscholar.org/1c14/549f7ba7d6a000d79a7d12255eb11113e6fa.pdf">Ouroboros: A provably secure proof-of-stake blockchain protocol</a>. Kiayias A, Russell A, David B, Oliynykov R. &lsquo;16.</li>
+<li><a href="https://arxiv.org/pdf/1607.01341.pdf">ALGORAND: The Efficient and Democratic Ledger</a>. Micali S. &lsquo;16.</li>
+<li>&ldquo;ByzCoin&rdquo;: <a href="https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_kokoris-kogias.pdf">Enhancing Bitcoin Security and Performance with Strong Consistency via Collective Signing</a>. Kogias EK, Jovanovic P, Gailly N, Khoffi I, Gasser L, Ford B. USENIX &lsquo;16.</li>
+<li><a href="http://fc16.ifca.ai/bitcoin/papers/BGM16.pdf">Cryptocurrencies without Proof of Work</a>. Bentov I, Gabizon A, Mizrahi A. FC &lsquo;16.</li>
+<li><a href="http://eprint.iacr.org/2017/573.pdf">Ouroboros Praos: An adaptively-secure, semi-synchronous proof-of-stake protocol</a>. Bernardo D, Gazi P, Kiayias A, Russell A. Crypto &lsquo;17.</li>
+<li><a href="https://eprint.iacr.org/2018/378.pdf">Ouroboros Genesis: Composable Proof-of-Stake Blockchains with Dynamic Availability</a>. Badertscher C, Gazi P, Kiayias A, Russell A, Zikas V. &lsquo;18.</li>
+<li><a href="http://eprint.iacr.org/2017/417.pdf">A Proof-of-Stake protocol for consensus on Bitcoin subchains</a>. Bartoletti M, Lande S, &amp; Podda A S. FC &lsquo;17.</li>
+<li><a href="https://fc19.ifca.ai/preproceedings/141-preproceedings.pdf">Snow White: Provably Secure Proofs of Stake.</a>. Bentov I, Pass R, Shi E. FC &lsquo;19.</li>
+</ul>
+
+
+<h2>Attacks</h2>
+
+<ul>
+<li><strong>&ldquo;Selfish Mining&rdquo;: <a href="https://arxiv.org/pdf/1311.0243">Majority Is Not Enough: Bitcoin Mining Is Vulnerable</a></strong>. Eyal I, Sirer EG. FC &lsquo;14.</li>
+<li><strong><a href="https://arxiv.org/pdf/1312.7013.pdf">Theoretical Bitcoin Attacks with less than Half of the Computational Power</a></strong>. Bahack L. &lsquo;13.</li>
+<li><a href="http://fc16.ifca.ai/preproceedings/30_Sapirshtein.pdf">Optimal Selfish Mining Strategies in Bitcoin</a>. Sapirshtein A, Sompolinsky Y, Zohar A. FC &lsquo;16.</li>
+<li><a href="http://fc16.ifca.ai/preproceedings/34_McCorry.pdf">Refund attacks on Bitcoin s Payment Protocol</a>. McCorry P, Shahandashti S, Hao F. FC &lsquo;16.</li>
+<li><a href="https://eprint.iacr.org/2018/236.pdf">Low-Resource Eclipse Attacks on Ethereum s Peer-to-Peer Network</a>. Marcus Y, Heilman E, Goldberg S. &lsquo;18.</li>
+<li><a href="https://fc18.ifca.ai/bitcoin/papers/bitcoin18-final17.pdf">Hostile blockchain takeovers</a>. Bonneau J. FC &lsquo;18.</li>
+</ul>
+
+
+<h2>Wallets</h2>
+
+<ul>
+<li><a href="http://fc16.ifca.ai/bitcoin/papers/MES16.pdf">Bitcoin Covenants</a>. Möser M, Eyal I, Sirer EG. FC &lsquo;16.</li>
+<li><a href="http://fc17.ifca.ai/bitcoin/papers/bitcoin17-final28.pdf">Enhancing Bitcoin Transactions with Covenants</a>. O Connor R, Piekarska M. FC &lsquo;17.</li>
+<li><a href="http://fc15.ifca.ai/preproceedings/paper_15.pdf">Hierarchical deterministic Bitcoin wallets that tolerate key leakage</a>. Gutoski G, Stebila D. FC &lsquo;15.</li>
+</ul>
+
+
+<h2>Crime</h2>
+
+<ul>
+<li><a href="http://fc15.ifca.ai/preproceedings/bitcoin/paper_15.pdf">ZombieCoin: Powering Next-Generation Botnets with Bitcoin</a>. Ali ST, McCorry P, Lee PH, Hao F. FC &lsquo;15.</li>
+<li><a href="http://fc16.ifca.ai/preproceedings/36_Vasek.pdf">The Bitcoin Brain Drain: A Short Paper on the Use and Abuse of Bitcoin Brain Wallets</a>. Vasek M, Bonneau J, Castellucci R, Keith C, Moore T. FC &lsquo;16.</li>
+</ul>
+
+
+<h2>Economics</h2>
+
+<ul>
+<li><strong><a href="https://arxiv.org/pdf/1111.2626.pdf">On Bitcoin and Red Balloons</a></strong>. Babaioff M, Dobzinski S, Oren S, Zohar A. EC &lsquo;12.</li>
+<li><strong><a href="http://www.cs.princeton.edu/~smattw/CKWN-CCS16.pdf">On the instability of Bitcoin without the block reward</a></strong>. Carlsten M, Kalodner H, Weinberg SM, Narayanan A. CCS &lsquo;16.</li>
+<li><a href="https://www.econinfosec.org/archive/weis2013/papers/KrollDaveyFeltenWEIS2013.pdf">The Economics of Bitcoin Mining or Bitcoin in the Presence of Adversaries</a>. Kroll J, Davey I, Felten E. WEIS &lsquo;13.</li>
+<li><a href="http://fc15.ifca.ai/preproceedings/bitcoin/paper_8.pdf">Trends, Tips, Tolls: A Longitudinal Study of Bitcoin Transaction Fees</a>. Möser M, Böhme R. FC &lsquo;15.</li>
+<li><a href="http://fc16.ifca.ai/bitcoin/papers/Bon16b.pdf">Why buy when you can rent? Bribery attacks on Bitcoin-style consensus</a>. Bonneau J. FC &lsquo;16.</li>
+<li><a href="http://fc14.ifca.ai/bitcoin/papers/bitcoin14_submission_16.pdf">Game-Theoretic Analysis of DDoS Attacks Against Bitcoin Mining Pools</a>. Johnson B, Laszka A, Grossklags J, Vasek M, Moore T. FC &lsquo;14.</li>
+<li><a href="http://fc15.ifca.ai/preproceedings/bitcoin/paper_13.pdf">When Bitcoin Mining Pools Run Dry A Game-Theoretic Analysis of the Long-Term Impact of Attacks Between Mining Pools</a>. Laszka A, Johnson B, Grossklags J. FC &lsquo;15.</li>
+<li><a href="http://fc16.ifca.ai/preproceedings/28_Schrijvers.pdf">Incentive Compatibility of Bitcoin Mining Pool Reward Functions</a>. Schrijvers O, Bonneau J, Boneh D, Roughgarden T. FC &lsquo;16.</li>
+<li><a href="http://fc16.ifca.ai/preproceedings/29_Teutsch.pdf">When cryptocurrencies mine their own business</a>. Teutsch J, Jain S, Saxena P. FC &lsquo;16.</li>
+<li><a href="http://fc17.ifca.ai/bitcoin/papers/bitcoin17-final26.pdf">Incentivizing Blockchain Forks via Whale Transactions</a>. Liao K, Katz J. FC &lsquo;17.</li>
+<li><a href="http://fc17.ifca.ai/bitcoin/papers/bitcoin17-final38.pdf">Smart Contracts Make Bitcoin Mining Pools Vulnerable</a>. Velner Y, Teutsch J, Luu L. FC &lsquo;17.</li>
+<li><a href="http://fc17.ifca.ai/bitcoin/papers/bitcoin17-final40.pdf">Mixing Coins of Different Quality: A Game-Theoretic Approach</a>. Abramova S, Schöttle P, Böhme R. FC &lsquo;17.</li>
+<li><a href="http://fc17.ifca.ai/bitcoin/papers/bitcoin17-final29.pdf">Decentralized Prediction Market without Arbiters</a>. Bentov I, Mizrahi A, Rosenfeld M. FC &lsquo;17.</li>
+<li><a href="http://wp.internetsociety.org/ndss/wp-content/uploads/sites/25/2018/02/ndss2018_09-1_Kalra_paper.pdf">&ldquo;Zeus&rdquo;: Analyzing Safety of Smart Contracts</a>. Kalra S, Goel S, Dhawan M, Sharma S. NDSS &lsquo;18.</li>
+<li><a href="https://eprint.iacr.org/2014/129.pdf">How to Use Bitcoin to Design Fair Protocols</a>. Bentov I, Kumaresan R. CRYPTO &lsquo;14.</li>
+<li><a href="http://delivery.acm.org/10.1145/3250000/3243737/p713-tsabary.pdf">The Gap Game</a>. Tsabary I., Eyal I. ACM CCS &lsquo;18.</li>
+</ul>
+
+
+<h2>Marketplaces and Trust</h2>
+
+<ul>
+<li><a href="https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-soska-updated.pdf">Measuring the Longitudinal Evolution of the Online Anonymous Marketplace Ecosystem</a>. Soska K, Christin N. USENIX &lsquo;15.</li>
+<li><a href="http://www.jbonneau.com/doc/GBGN17-FC-physical_escrow.pdf">Escrow protocols for cryptocurrencies: How to buy physical goods using Bitcoin</a>. Goldfeder S, Bonneau J, Gennaro R, Narayanan A. FC &lsquo;17.</li>
+<li><a href="http://fc17.ifca.ai/preproceedings/paper_37.pdf">Trust Is Risk: A Decentralized Financial Trust Platform</a>. Thyfronitis Litos OS, Zindros D. FC &lsquo;17.</li>
+<li><a href="http://dspace.lib.ntua.gr/bitstream/handle/123456789/43147/pseudonymous-trust-2.pdf?sequence=1">Trust in decentralized anonymous marketplaces</a>. Zindros D. &lsquo;15.</li>
+<li><a href="http://library.uniteddiversity.coop/Money_and_Economics/decentralizedcurrency.pdf">Money as IOUs in social trust networks &amp; a proposal for a decentralized currency network protocol</a>. Fugger R. &lsquo;04.</li>
+<li><a href="https://ripple.com/files/ripple_consensus_whitepaper.pdf">The Ripple protocol consensus algorithm</a>. Schwartz D, Youngs N, Britto A. &lsquo;14.</li>
+<li><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.696.93&amp;amp=&amp;rep=rep1&amp;amp=&amp;type=pdf">The stellar consensus protocol: A federated model for internet-level consensus</a>. Mazières D. &lsquo;15.</li>
+<li><a href="http://fc15.ifca.ai/preproceedings/paper_75.pdf">There s No Free Lunch, Even Using Bitcoin: Tracking the Popularity and Profits of Virtual Currency Scams</a>. Vasek M, Moore T. FC &lsquo;15.</li>
+<li><a href="http://fc14.ifca.ai/bitcoin/papers/bitcoin14_submission_5.pdf">Challenges and Opportunities Associated with a Bitcoin-based Transaction Rating System</a>. Vandervort D. FC &lsquo;14.</li>
+</ul>
+
+
+<h2>Privacy</h2>
+
+<ul>
+<li><a href="http://ieeexplore.ieee.org/iel7/6547086/6547088/06547123.pdf">Zerocoin: Anonymous distributed e-cash from bitcoin</a>. Miers I, Garman C, Green M, Rubin AD. S&amp;P &lsquo;13.</li>
+<li><a href="http://ieeexplore.ieee.org/iel7/6954656/6956545/06956581.pdf">Zerocash: Decentralized anonymous payments from bitcoin</a>. Sasson EB, Chiesa A, Garman C, Green M, Miers I, Tromer E, Virza M. S&amp;P &lsquo;14.</li>
+<li>&ldquo;Monero&rdquo;: <a href="https://cryptonote.org/whitepaper.pdf">CryptoNote v2.0</a>. Saberhagen N. &lsquo;13?</li>
+<li><a href="http://fc14.ifca.ai/bitcoin/papers/bitcoin14_submission_12.pdf">Rational Zero: Economic Security for Zerocoin with Everlasting Anonymity</a>. Garman C, Green M, Miers I, Rubin A. FC &lsquo;14.</li>
+<li><a href="https://eprint.iacr.org/2014/077.pdf">Mixcoin: Anonymity for bitcoin with accountable mixes</a>. Bonneau J, Narayanan A, Miller A, Clark J, Kroll JA, Felten EW. &lsquo;14.</li>
+<li><a href="https://pdfs.semanticscholar.org/a4ce/62a44770a33d1a19b5553f080d4f12e9e55d.pdf">TumbleBit: An untrusted Bitcoin-compatible anonymous payment hub</a>. Heilman E, Alshenibr L, Baldimtsi F, Scafuro A, Goldberg S. &lsquo;16.</li>
+<li><a href="http://fc16.ifca.ai/bitcoin/papers/HBG16.pdf">Blindly Signed Contracts: Anonymous On-Blockchain and Off-Blockchain Bitcoin Transactions</a>. Heilman E, Baldimtsi F, Goldberg S. FC &lsquo;16.</li>
+<li><a href="http://crypsys.mmci.uni-saarland.de/projects/CoinShuffle/coinshuffle.pdf">Coinshuffle: Practical decentralized coin mixing for bitcoin</a>. Ruffing T, Moreno-Sanchez P, Kate A. ESORICS &lsquo;14.</li>
+<li><a href="https://eprint.iacr.org/2012/584.pdf">Quantitative analysis of the full bitcoin transaction graph</a>. Ron D, Shamir A. FC &lsquo;13.</li>
+<li><a href="http://fc14.ifca.ai/bitcoin/papers/bitcoin14_submission_2.pdf">How Did Dread Pirate Roberts Acquire and Protect His Bitcoin Wealth?</a>. Ron D, Shamir A. FC &lsquo;14.</li>
+<li>&ldquo;MoneroLink&rdquo;: <a href="http://monerolink.com/monerolink.pdf">An Empirical Analysis of Linkability in the Monero Blockchain</a>. Miller A, Möser M, Lee K, Narayanan A. &lsquo;17.</li>
+<li><a href="https://eprint.iacr.org/2015/1008.pdf">Provisions: Privacy-preserving proofs of solvency for Bitcoin exchanges</a>. Dagher GG, Bünz B, Bonneau J, Clark J, Boneh D. CCS &lsquo;15.</li>
+<li><a href="http://fc14.ifca.ai/bitcoin/papers/bitcoin14_submission_19.pdf">Increasing Anonymity in Bitcoin</a>. Saxena A, Misra J, Dhar A. FC &lsquo;14.</li>
+<li><a href="http://fc15.ifca.ai/preproceedings/bitcoin/paper_3.pdf">Blindcoin Blinded, Accountable Mixes for Bitcoin</a>. Valenta L, Rowan B. FC &lsquo;15.</li>
+<li><a href="https://eprint.iacr.org/2015/675.pdf">Hawk: The Blockchain Model of Cryptography and Privacy-Preserving Smart Contracts</a>. Kosba A, Miller A, Shi E, Wen Z, Papamanthou C. SP &lsquo;16</li>
+<li><a href="http://fc17.ifca.ai/bitcoin/papers/bitcoin17-final11.pdf">Could Network Information Facilitate Address Clustering in Bitcoin?</a>. Neudecker T, Hartenstein H. FC &lsquo;17.</li>
+<li><a href="http://blog.koehntopp.de/uploads/Chaum.BlindSigForPayment.1982.PDF">Blind signatures for untraceable payments</a>. Chaum D. CRYPTO &lsquo;83.</li>
+<li><a href="http://fc17.ifca.ai/bitcoin/papers/bitcoin17-final17.pdf">Exchange Pattern Mining in the Bitcoin Transaction Directed Hypergraph</a>. Ranshous S, Joslyn A, Kreyling S, Nowak K, Samatova N, West C, Winters C. FC &lsquo;17.</li>
+<li><a href="http://fc17.ifca.ai/bitcoin/papers/bitcoin17-final41.pdf">Confidential Assets</a>. Poelstra A, Back A, Friedenbach M, Maxwell G, Wuille P. FC &lsquo;17.</li>
+<li><a href="http://fc17.ifca.ai/bitcoin/papers/bitcoin17-final6.pdf">Mixing Confidential Transactions: Comprehensive Transaction Privacy for Bitcoin</a>. Ruffing T, Moreno-Sanchez P. FC &lsquo;17.</li>
+<li><a href="http://fc17.ifca.ai/bitcoin/papers/bitcoin17-final23.pdf">Switch Commitments: A Safety Switch for Confidential Transactions</a>. Ruffing T, Malavolta G. FC &lsquo;17.</li>
+<li><a href="https://www.martinhenze.de/wp-content/papercite-data/pdf/zgh+15.pdf">CoinParty: Secure Multi-Party Mixing of Bitcoins</a>. Ziegeldorf, J.H., Grossmann, F., Henze, M., Inden, N. and Wehrle, K. CODASPY &lsquo;15.</li>
+<li><a href="http://e-collection.library.ethz.ch/eserv/eth:48205/eth-48205-01.pdf">Data-Driven De-Anonymization in Bitcoin</a>. Nick J. Diss. ETH-Zürich, &lsquo;15.</li>
+<li><a href="https://arxiv.org/pdf/1405.7418.pdf">Deanonymisation of Clients in Bitcoin P2P Network</a>. Biryukov A, Khovratovich D, Pustogarov I. CCS &lsquo;14.</li>
+<li><a href="http://ceur-ws.org/Vol-2334/DLTpaper5.pdf">Transferable Anonymous Payments via TumbleBit in Permissioned Blockchains</a>. Ferretti C, Leporati A, Mariot L, Nizzardo L. DLT &lsquo;19.</li>
+</ul>
+
+
+<h2>Sidechains, Higher layer and Scalability</h2>
+
+<ul>
+<li><a href="https://blockstream.com/sidechains.pdf">Enabling Blockchain Innovations with Pegged Sidechains</a>. Back A, Corallo M, Dashjr L, Friedenbach M, Maxwell G, Miller A, Poelstra A, Timón J, Wuille P. &lsquo;14.</li>
+<li><a href="http://fc16.ifca.ai/bitcoin/papers/KLS16.pdf">Proofs of Proofs of Work with Sublinear Complexity</a>. Kiayias A, Lamprou N, Stouka AP. FC &lsquo;16.</li>
+<li><a href="https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf">Bitcoin-NG: A Scalable Blockchain Protocol</a>. Eyal I, Gencer AE, Sirer EG, Van Renesse R. USENIX &lsquo;16.</li>
+<li><a href="http://fc15.ifca.ai/preproceedings/bitcoin/paper_9.pdf">On the Malleability of Bitcoin Transactions</a>. Andrychowicz M, Dziembowski S, Malinowski D, Mazurek  . FC &lsquo;15.</li>
+<li><a href="http://fc16.ifca.ai/bitcoin/papers/CDE+16.pdf">On Scaling Decentralized Blockchains</a>. Croman K, Decker C, Eyal I, Gencer AE, Juels A, Kosba A, Miller A, Saxena P, Shi E, Sirer EG, Song D. FC &lsquo;16.</li>
+<li>&ldquo;Elastico&rdquo;: <a href="https://www.comp.nus.edu.sg/~prateeks/papers/Elastico.pdf">A secure sharding protocol for open blockchains</a>. Luu L, Narayanan V, Zheng C, Baweja K, Gilbert S, Saxena P. CCS &lsquo;16.</li>
+<li><a href="http://fc17.ifca.ai/preproceedings/paper_34.pdf">Improving Authenticated Dynamic Dictionaries, with Applications to Cryptocurrencies</a>. Reyzin L, Meshkov D, Chepurnoy A, Ivanov S. FC &lsquo;17.</li>
+<li><a href="http://fc17.ifca.ai/preproceedings/paper_73.pdf">Service-Oriented Sharding for Blockchains</a>. Gencer AE, Van Renesse R, Sirer EG. FC &lsquo;17.</li>
+<li><a href="https://eprint.iacr.org/2017/963.pdf">Non-Interactive Proofs of Proof-of-Work</a>. Kiayias A, Miller A, Zindros D. &lsquo;17.</li>
+<li><a href="https://eprint.iacr.org/2018/1239.pdf">Proof-of-Stake Sidechains</a>. Ga i P, Kiayias A, Zindros D. S&amp;P &lsquo;19.</li>
+<li><a href="https://eprint.iacr.org/2018/1048.pdf">Proof-of-Work Sidechains</a>. Kiayias A, Zindros D. FC WTSC &lsquo;19.</li>
+<li><a href="https://eprint.iacr.org/2019/226.pdf">FlyClient: Super-Light Clients for Cryptocurrencies</a>. B Bünz, L Kiffer, L Luu, M Zamani. &lsquo;19.</li>
+<li><a href="https://arxiv.org/pdf/1809.10361.pdf">PolyShard: Coded Sharding Achieves Linearly Scaling Efficiency and Security Simultaneously</a>. Li S, Yu M, Avestimehr S, Kannan S, Viswanath P. &lsquo;18.</li>
+<li><a href="http://www.vldb.org/pvldb/vol11/p1137-wang.pdf">ForkBase: An Efficient Storage Engine for Blockchain and Forkable Applications</a>. Wang S, Dinh TT, Lin Q, Xie Z, Zhang M, Cai Q, Chen G, Ooi BC, Ruan P. PVLDB &lsquo;18.</li>
+</ul>
+
+
+<h2>Payment Networks</h2>
+
+<ul>
+<li><a href="https://pdfs.semanticscholar.org/c8d2/b0c1f9b1ca739c340e9dc4a2ff71b5bfbb2e.pdf">A Fast and Scalable Payment Network with Bitcoin Duplex Micropayment Channels</a>. Decker C, Wattenhofer R. SSS &lsquo;15.</li>
+<li><a href="https://www.weusecoins.com/assets/pdf/library/Lightning%20Network%20Whitepaper.pdf">The bitcoin lightning network: Scalable off-chain instant payments</a>. Poon J, Dryja T. &lsquo;15.</li>
+<li>&ldquo;Deployable Lightning&rdquo;: <a href="https://github.com/ElementsProject/lightning/raw/master/doc/deployable-lightning.pdf">Reaching The Ground With Lightning</a>. Russell R. &lsquo;15.</li>
+<li><a href="http://fc17.ifca.ai/bitcoin/papers/bitcoin17-final21.pdf">Teechan: Payment Channels Using Trusted Execution Environments</a>. Lind J, Eyal I, Pietzuch P, Sirer EG. FC BITCOIN &lsquo;17.</li>
+<li><a href="https://eprint.iacr.org/2017/823.pdf">Revive: Rebalancing Off-Blockchain Payment Networks</a>. Khalil, R., &amp; Gervais, A. CCS &lsquo;17.</li>
+<li><a href="https://liquidity.network/NOCUST_Liquidity_Network_Paper.pdf">NOCUST   A Non-Custodial 2nd-Layer Financial Intermediary</a>. Khalil R, Gervais, A. &lsquo;18.</li>
+<li><a href="https://l4.ventures/papers/statechannels.pdf">Counterfactual: Generalized state channels</a>. Coleman J, Horne L, Xuanji L. &lsquo;18.</li>
+<li><a href="https://arxiv.org/pdf/1702.05812.pdf">Sprites and State Channels: Payment Networks that Go Faster than Lightning</a> Miller A, Bentov I, Kumaresan R, Cordi C, McCorry P. &lsquo;17.</li>
+<li><a href="https://eprint.iacr.org/2017/635.pdf">Perun: Virtual payment hubs over cryptocurrencies</a> Dziembowski S, Eckey L, Faust S, Malinowski D. IEEE S&amp;P &lsquo;19.</li>
+<li><a href="https://eprint.iacr.org/2018/320.pdf">General State Channel Networks</a> Dziembowski S, Faust S, Hostáková K. CCS &lsquo;18.</li>
+<li><a href="https://eprint.iacr.org/2016/701.pdf">Bolt: Anonymous Payment Channels for Decentralized Currencies</a> Green M, Miers I. &lsquo;16.</li>
+<li><a href="https://bitfury.com/content/downloads/whitepaper_flare_an_approach_to_routing_in_lightning_network_7_7_2016.pdf">Flare: An Approach to Routing in Lightning Network</a>. Prihodko P, Zhigulin S, Sahno M, Ostrovskiy A, Osuntokyn O. &lsquo;16.</li>
+<li><a href="https://eprint.iacr.org/2019/328.pdf">On the Difficulty of Hiding the Balance of Lightning Network Channels</a>. Herrera-Joancomartí J, Navarro-Arribas G, Ranchal-Pedrosa A, Pérez-Solà C, Garcia-Alfaro J. &lsquo;19.</li>
+<li><a href="https://eprint.iacr.org/2018/582.pdf">Pisa: Arbitration Outsourcing for State Channels</a>. McCorry P, Bakshi S, Bentov I, Meiklejohn S, Miller A. &lsquo;18.</li>
+<li><a href="https://eprint.iacr.org/2017/820.pdf">Concurrency and Privacy with Payment-Channel Networks</a>. Malavolta G, Moreno-Sanchez P, Kate A, Maffei M, Ravi S. CCS &lsquo;17.</li>
+<li><a href="https://blockstream.com/eltoo.pdf">eltoo: A Simple Layer2 Protocol for Bitcoin</a>. Decker C, Russell R, Osuntokun O. &lsquo;18.</li>
+<li><a href="https://eprint.iacr.org/2019/352.pdf">SoK: A Taxonomy for Layer-2 Scalability Related Protocols for Cryptocurrencies</a>. Jourenko M, Kurazumi K, Larangeira M, Tanaka K. &lsquo;19.</li>
+<li><a href="https://eprint.iacr.org/2019/360.pdf">SoK: Off The Chain Transactions</a>. Gudgeon L, Moreno-Sanchez P, Roos S, McCorry P, Gervais A. &lsquo;19.</li>
+<li><a href="https://eprint.iacr.org/2019/219.pdf">Nitro Protocol</a>. Close T. &lsquo;19.</li>
+<li><a href="https://fc19.ifca.ai/wtsc/StateAssertions.pdf">Two-Party State Channels with Assertions</a>. Buckland C, McCorry P. FC &lsquo;19.</li>
+<li><a href="https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_09-4_Malavolta_paper.pdf">Anonymous Multi-Hop Locks for Blockchain Scalability and Interoperability</a>. Malavolta G, Moreno-Sanchez P, Schneidewind C, Kate A, Maffei M. NDSS &lsquo;19.</li>
+</ul>
+
+
+<h2>Fungibility</h2>
+
+<ul>
+<li><a href="http://fc14.ifca.ai/bitcoin/papers/bitcoin14_submission_15.pdf">Towards Risk Scoring of Bitcoin Transactions</a>. Möser M, Böhme R, Breuker D. FC &lsquo;14.</li>
+</ul>
+
+
+<h2>Network</h2>
+
+<ul>
+<li><a href="http://fc14.ifca.ai/bitcoin/papers/bitcoin14_submission_3.pdf">The Bitcoin P2P network</a>. Donet Donet JA, Perez-Sola C, Herrera-Joancomart J. FC &lsquo;14.</li>
+<li><a href="http://fc14.ifca.ai/bitcoin/papers/bitcoin14_submission_17.pdf">Empirical Analysis of Denial-of-Service Attacks in the Bitcoin Ecosystem</a>. Vasek M, Thornton M, Moore T. FC &lsquo;14.</li>
+<li><a href="https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-heilman.pdf">Eclipse Attacks on Bitcoin&rsquo;s Peer-to-Peer Network</a>. Heilman E, Kendler A, Zohar A, Goldberg S. USENIX &lsquo;15.</li>
+<li><a href="https://arxiv.org/pdf/1605.07524v2">Hijacking Bitcoin: Routing Attacks on Cryptocurrencies</a>. Apostolaki M, Zohar A, Vanbever L. S&amp;P &lsquo;17.</li>
+<li><a href="http://fc16.ifca.ai/bitcoin/papers/BHMW16.pdf">Stressing Out: Bitcoin  Stress Testing </a>. Baqer K, Yuxing Huang D, McCoy D, Weaver N. FC &lsquo;16.</li>
+<li><a href="https://infoscience.epfl.ch/record/222858/files/199.pdf">The Honey Badger of BFT Protocols</a>. Miller A, Xia Y, Croman K, Shi E, Song D. CCS &lsquo;16.</li>
+<li><a href="http://www.tik.ee.ethz.ch/file/49318d3f56c1d525aabf7fda78b23fc0/P2P2013_041.pdf">Information Propagation in the Bitcoin Network</a>. Decker C., Wattenhofer R. IEEE P2P &lsquo;13.</li>
+</ul>
+
+
+<h2>Smart Contracts</h2>
+
+<ul>
+<li>&ldquo;Ethereum&rdquo;: <a href="https://www.weusecoins.com/assets/pdf/library/Ethereum_white_paper-a_next_generation_smart_contract_and_decentralized_application_platform-vitalik-buterin.pdf">A next-generation smart contract and decentralized application platform</a>. Vitalik Buterin. &lsquo;14.</li>
+<li><a href="http://gavwood.com/paper.pdf">Ethereum: A secure decentralised generalised transaction ledger</a>. Wood G. &lsquo;14.</li>
+<li><a href="http://fc14.ifca.ai/bitcoin/papers/bitcoin14_submission_10.pdf">Fair Two-Party Computations via Bitcoin Deposits</a>. Andrychowicz M, Dziembowski S, Malinowski D, Mazurek  . FC &lsquo;14.</li>
+<li><a href="http://fc16.ifca.ai/bitcoin/papers/DAKMS16.pdf">Step by Step Towards Creating a Safe Smart Contract: Lessons and Insights from a Cryptocurrency Lab</a>. Delmolino K, Arnett M, Kosba A, Miller A, Shi E. FC &lsquo;16.</li>
+<li><a href="http://fc16.ifca.ai/bitcoin/papers/Bon16a.pdf">EthIKS: Using Ethereum to audit a CONIKS key transparency log</a>. Bonneau J. FC &lsquo;16.</li>
+<li>&ldquo;Oyente&rdquo;: <a href="https://www.comp.nus.edu.sg/~loiluu/papers/oyente.pdf">Making Smart Contracts Smarter</a>. Luu L, Chu DH, Olickel H, Saxena P, Hobor A. CCS &lsquo;16.</li>
+<li><a href="http://www.initc3.org/files/Gyges.pdf">The Ring of Gyges: Investigating the Future of Criminal Smart Contracts</a>. Juels A, Kosba A, Shi E. CCS &lsquo;16.</li>
+<li><a href="https://eprint.iacr.org/2016/168.pdf">Town crier: An authenticated data feed for smart contracts</a>. Zhang F, Cecchetti E, Croman K, Juels A, Shi E. CCS &lsquo;16.</li>
+<li><a href="http://fc17.ifca.ai/preproceedings/paper_80.pdf">A Smart Contract for Boardroom Voting with Maximum Voter Privacy</a>. McCorry P, Shahandashti SF, Hao F. FC &lsquo;17.</li>
+<li><a href="http://fc17.ifca.ai/bitcoin/papers/bitcoin17-final39.pdf">Constant-deposit multiparty lotteries on Bitcoin</a>. Bartoletti M, Zunino R. FC &lsquo;17.</li>
+</ul>
+
+
+<h2>Formal Methods</h2>
+
+<ul>
+<li><a href="http://fc16.ifca.ai/bitcoin/papers/TVR16.pdf">Automated Verification of Electrum Wallet</a>. Turuani M, Voegtlin T, Rusinowitch M. FC &lsquo;16.</li>
+</ul>
+
+
+<h2>Proof of work</h2>
+
+<ul>
+<li>&ldquo;Proof-of-work&rdquo;: <a href="https://web.cs.dal.ca/~abrodsky/7301/readings/DwNa93.pdf">Pricing via processing or combatting junk mail</a>. Dwork C, Naor M. &lsquo;92.</li>
+<li><a href="http://www.hashcash.org/papers/hashcash.pdf">Hashcash - A Denial of Service Counter-Measure</a>. Back A. &lsquo;02.</li>
+<li><a href="http://fc15.ifca.ai/preproceedings/bitcoin/paper_12.pdf">Cuckoo Cycle: a memory bound graph-theoretic proof-of-work</a>. Tromp J. FC &lsquo;15.</li>
+<li><a href="http://fc17.ifca.ai/bitcoin/papers/bitcoin17-final24.pdf">PieceWork: Generalized Outsourcing Control for Proofs of Work</a>. Daian P, Eyal I, Juels A, Sirer EG. FC &lsquo;17.</li>
+<li><a href="http://ieeexplore.ieee.org/iel7/6954656/6956545/06956582.pdf">Permacoin: Repurposing bitcoin work for data preservation</a>. Miller A, Juels A, Shi E, Parno B, Katz J. Permacoin. S&amp;P &lsquo;14.</li>
+</ul>
+
+
+<h2>DAG-based consensus</h2>
+
+<ul>
+<li><a href="https://eprint.iacr.org/2016/1159.pdf">SPECTRE: A Fast and Scalable Cryptocurrency Protocol</a>.
+Sompolinsky Y, Lewenberg Y, Zohar A. &lsquo;16.</li>
+<li>&ldquo;PHANTOM&rdquo;: <a href="https://eprint.iacr.org/2018/104.pdf">A Scalable BlockDAG protocol</a>. Sompolinsky Y, Zohar A. &lsquo;18.</li>
+<li><a href="https://ipfs.io/ipfs/QmUy4jh5mGNZvLkjies1RWM4YuvJh5o2FYopNPVYwrRVGV">Snowflake to Avalanche: A Novel Metastable Consensus Protocol Family for Cryptocurrencies</a>. Team Rocket. &lsquo;18.</li>
+<li><a href="https://arxiv.org/pdf/1805.03870.pdf">Scaling Nakamoto Consensus to Thousands of Transactions per Second</a>. Li C, Li P, Zhou D, Xu W, Long F, Chi-Chih Yao A. &lsquo;18.</li>
+<li><a href="https://eprint.iacr.org/2016/871.pdf">Blockchain-Free Cryptocurrencies: A Framework for Truly Decentralised Fast Transactions</a> Boyen X, Carr C, Haines T. &lsquo;16.</li>
+<li><a href="https://dagcoin.org/whitepaper.pdf">DAGcoin Whitepaper</a> Ribero Y, Raissar D. &lsquo;15.</li>
+<li><a href="https://byteball.org/Byteball.pdf">Byteball: A Decentralized System for Storage and Transfer of Value</a> Churyumov A. &lsquo;16.</li>
+</ul>
+
+
+<h2>Survey, Sociological &amp; Anthropological</h2>
+
+<ul>
+<li><a href="http://fc15.ifca.ai/preproceedings/bitcoin/paper_2.pdf">Issues in Designing a Bitcoin-Like Community Currency</a>. Vandervort D, Gaucas D, St Jacques R. FC &lsquo;15.</li>
+<li><a href="http://fc15.ifca.ai/preproceedings/bitcoin/paper_14.pdf">The Bitcoin Market Potential Index</a>. Hileman G. FC &lsquo;15.</li>
+<li><a href="http://fc15.ifca.ai/preproceedings/bitcoin/paper_16.pdf">Cryptographic Currencies from a Tech-Policy Perspective: Policy Issues and Technical Direction</a>. McReynolds E, Lerner A, Scott W, Roesner F, Kohno T. FC &lsquo;15.</li>
+<li><a href="http://fc16.ifca.ai/preproceedings/33_Krombholz.pdf">The Other Side of the Coin: User Experiences with Bitcoin Security and Privacy</a>. Krombholz K, Judmayer A, Gusenbauer M, Weippl E. FC &lsquo;16.</li>
+<li><a href="http://fc17.ifca.ai/bitcoin/papers/bitcoin17-final32.pdf">An analysis of Bitcoin OP_RETURN metadata</a>. Bartoletti M, Pompianu L. FC &lsquo;17.</li>
+</ul>
+
+
+<h2>Applications</h2>
+
+<ul>
+<li><a href="https://blockstack.org/whitepaper.pdf">Blockstack Technical Whitepaper</a>. Muneeb A., Ryan S., Jude N, Michael F. &lsquo;17</li>
+<li><a href="https://storj.io/storjv3.pdf">Storj A Peer-to-Peer Cloud Storage Network</a>. Shawn W., Tome B., Josh B., James P., Gordon H., Patrick G., Philip H., Chris P. &lsquo;18</li>
+<li><a href="https://github.com/ipfs/papers/raw/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf">IPFS - Content Addressed, Versioned, P2P File System</a>. Benet J. &lsquo;15</li>
+<li><a href="https://www.bigchaindb.com/whitepaper/bigchaindb-whitepaper.pdf">BigchainDB: A Scalable Blockchain Database</a>. McConaghy T, Marques R, Müller A, De Jonghe D, McConaghy T, McMullen G, Henderson R, Bellemare S, Granzotto A. &lsquo;17</li>
+<li><a href="https://eprint.iacr.org/2011/677.pdf">Commitcoin: Carbon dating commitments with bitcoin</a>. Clark J, Essex A. FC &lsquo;12.</li>
+<li><a href="https://github.com/opentimestamps/">OpenTimestamps: Securing Software Updates using the Bitcoin Blockchain Financial Cryptography and Data Security</a>. Todd P, Halpin H. (FC Poster &lsquo;17)</li>
+<li><a href="https://arxiv.org/pdf/1502.04015.pdf">Decentralized trusted timestamping using the crypto currency bitcoin</a>. Gipp B., Meuschke N., Gernandt A. iConference 2015</li>
+<li><a href="https://eprint.iacr.org/2015/574.pdf">Fair and Robust Multi-Party Computation using a Global Transaction Ledger</a>. Kiayias A., Zhouh S., Zikas V. EUROCRYPT &lsquo;16.</li>
+</ul>
+
+
+<h2>License</h2>
+
+<p><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="CC0" /></a></p>
+
+<p>This list is released into the public domain.</p>
+
+</body>
+</html>
